@@ -9,5 +9,7 @@
         "target/esp32.cfg"
     ],
     "idf.pythonBinPath": "/home/markbr88/.espressif/python_env/idf4.4_py3.10_env/bin/python",
-    "idf.toolsPath": "/home/markbr88/.espressif"
+    "idf.toolsPath": "/home/markbr88/.espressif",
+    "idf.flashType": "UART",
+    "idf.port": "/dev/ttyUSB0"
 }
