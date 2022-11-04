@@ -67,7 +67,7 @@ static void ir_tx_task(void *arg)
     ir_builder = ir_builder_rmt_new_nec(&ir_builder_config);
 
     while (1) {
-        vTaskDelay(pdMS_TO_TICKS(2000));
+        vTaskDelay(pdMS_TO_TICKS(3000));
         ESP_LOGI(TAG, "Send command 0x%x to address 0x%x", cmd, addr);
         // Send new key code
         ESP_ERROR_CHECK(ir_builder->build_frame(ir_builder, addr, cmd));
